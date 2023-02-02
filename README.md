@@ -11,3 +11,4 @@
       5. readonly modifier e Programação Defensiva;
    2. [TypeScript parte 2: avançando na linguagem](https://cursos.alura.com.br/course/typescript-avancando-linguagem)
       1. Template declarativo e dinâmico e formatação com Intl;
+      2. Herança e Classes Abstratas;
