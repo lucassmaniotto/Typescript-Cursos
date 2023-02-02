@@ -7,3 +7,4 @@
       1. Introdução aos módulos ECMAScript e limitações do JavaScript;
       2. Configuração de compilação do TypeScript;
       3. Tipagem estática e método explícito;
+      4. Generics e Readonly;
