@@ -1,9 +1,11 @@
 import { Negociation } from "../models/negotiation.js";
+import { NegociationList } from "../models/negotiationList.js";
 
 export class NegotiantionController {
     private inputDate: HTMLInputElement;
     private inputQuantity: HTMLInputElement;
     private inputValue: HTMLInputElement;
+    private negotiationList = new NegociationList();
 
     constructor() {
         this.inputDate = document.querySelector("#data");
@@ -33,8 +35,9 @@ export class NegotiantionController {
 
     add(): void {
         const negotiation = this.createNegotiation();
-        console.log(negotiation);
+        this.negotiationList.add(negotiation);
         this.clearForm();
+        console.log(this.negotiationList.list());
     }
 
 }
