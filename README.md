@@ -8,3 +8,4 @@
       2. Configuração de compilação do TypeScript;
       3. Tipagem estática e método explícito;
       4. Generics e Readonly;
+      5. readonly modifier e Programação Defensiva;
