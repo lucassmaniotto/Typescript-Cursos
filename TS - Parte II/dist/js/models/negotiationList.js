@@ -1,4 +1,4 @@
-export class NegociationList {
+export class NegotiationList {
     constructor() {
         this.negotiations = [];
     }

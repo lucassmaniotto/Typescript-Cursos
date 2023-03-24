@@ -1,14 +1,14 @@
-import { Negociation } from "../models/negotiation.js";
-import { NegociationList } from "../models/negotiationList.js";
-import { NegotiationsView } from "../views/negociations-view.js";
+import { Negotiation } from "../models/negotiation.js";
+import { NegotiationList } from "../models/negotiationList.js";
+import { NegotiationsView } from "../views/negotiations-view.js";
 import { MessageView } from "../views/message-view.js";
 
-export class NegotiantionController {
+export class NegotiationController {
     private inputDate: HTMLInputElement;
     private inputQuantity: HTMLInputElement;
     private inputValue: HTMLInputElement;
-    private negotiationList = new NegociationList();
-    private negotiationView = new NegotiationsView("#negociationsView");
+    private negotiationList = new NegotiationList();
+    private negotiationView = new NegotiationsView("#negotiationsView");
     private messageView = new MessageView("#messageView");
 
     constructor() {
@@ -18,13 +18,13 @@ export class NegotiantionController {
         this.negotiationView.update(this.negotiationList);
     }
 
-    createNegotiation(): Negociation {
+    createNegotiation(): Negotiation {
         const exp = /-/g;
         const date = new Date(this.inputDate.value.replace(exp, ","));
         const quantity = parseInt(this.inputQuantity.value);
         const value = parseFloat(this.inputValue.value);
 
-        return new Negociation(
+        return new Negotiation(
             date,
             quantity,
             value

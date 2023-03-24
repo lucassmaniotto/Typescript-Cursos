@@ -1,4 +1,4 @@
-export class Negociation {
+export class Negotiation {
     constructor(
         private _date: Date, 
         public readonly quantity: number, 
