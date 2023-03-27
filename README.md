@@ -1,5 +1,4 @@
-# Formações
-
+# Alura
 ## TypeScript
 ### Formação disponível em: [Alura](https://cursos.alura.com.br/formacao-typescript)
 1. Um mergulho no TypeScript
@@ -12,3 +11,15 @@
    2. [TypeScript parte 2: avançando na linguagem](https://cursos.alura.com.br/course/typescript-avancando-linguagem)
       1. Template declarativo e dinâmico e formatação com Intl;
       2. Herança e Classes Abstratas;
+
+# Udemy
+## JavaScript e TypeScript do básico ao avançado
+### Formação disponível em: [Udemy](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/)
+1. Instalação
+   1. Introdução
+   2. Instalação
+   3. ts-node e Code Runner
+   4. ESLint
+   5. Prettier
+   6. tsconfig.json
+   7. .editorconfig
