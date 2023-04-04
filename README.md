@@ -23,3 +23,20 @@
    5. Prettier
    6. tsconfig.json
    7. .editorconfig
+2. Tipos Básicos
+   1. any
+   2. void
+   3. object
+   4. array
+   5. tuple
+   6. null e undefined
+   7. never
+   8. Enum
+   9. unknown
+   10. Union Types
+   11. Literal Types
+   12. Alias
+   13. Intersection Types
+   14. Function Types
+   15. Strucural Type System
+   16. Assertion Types
