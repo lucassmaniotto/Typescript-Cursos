@@ -9,9 +9,10 @@ const email = document.querySelector('#email') as HTMLInputElement;
 const password = document.querySelector('#password') as HTMLInputElement;
 const password2 = document.querySelector('#password2') as HTMLInputElement;
 
-form.addEventListener('submit', function (event: Event) {
+const submitEventFn = (event: Event) => {
+  const target = event.target as HTMLFormElement;
   event.preventDefault();
-  hideErrorMessages(this);
+  hideErrorMessages(target);
   checkUsername(username);
   checkEmail(email);
   checkEqualPasswords(password, password2);
@@ -19,7 +20,7 @@ form.addEventListener('submit', function (event: Event) {
   checkPasswordStrength(password);
   checkForEmptyFields(username, email, password, password2);
 
-  if (isFormValid(this)) {
+  if (isFormValid(target)) {
     Swal.fire({
       title: 'Sucesso!',
       text: 'Formulário enviado com sucesso!',
@@ -27,19 +28,29 @@ form.addEventListener('submit', function (event: Event) {
       confirmButtonText: 'Ok'
     }).then(() => {
       encryptPassword(password);
-      encryptPassword(password2);
       sendForm(event);
       clearFields(username, email, password, password2);
     });
   }
-});
+}
 
-function sendForm(event: Event): void {
+form.addEventListener('submit', submitEventFn);
+
+async function sendForm(event: Event): Promise<void> {
   const form = event.target as HTMLFormElement;
-  const formData = new FormData(form);
-  const xhr = new XMLHttpRequest();
-  xhr.open('POST', 'https://httpbin.org/post');
-  xhr.send(formData);
+  const username = new FormData(form).get('username');
+  const email = new FormData(form).get('email');
+  const password = new FormData(form).get('password');
+  const response = await fetch('https://httpbin.org/post', {
+    method: 'POST',
+    body: JSON.stringify({
+      username,
+      email,
+      password
+    })
+  });
+  const data = await response.json();
+  console.log(data);
 }
 
 function clearFields(...inputs: HTMLInputElement[]): void {
