@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 100px auto;
+  background: #fff;
+  max-width: 640px;
+  padding: 20px 50px;
+  border-radius: 4px;
+}
+
+.container h2 {
+  padding: 0 0 20px 0;
+}
+
+.video-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.video {
+  max-width: 100%;
+  display: flex;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls button {
+  margin: 0 5px;
+  padding: 0;
+  border: none;
+  padding: 5px 10px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.controls button:hover {
+  opacity: 1;
+}
+
+.controls .loop {
+  display: none;
+}
+
+.controls .loop-active {
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 4px;
+}
