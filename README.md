@@ -54,3 +54,11 @@
    11. Alias Types em Classes
    12. Interfaces
    13. Declaration merging
+4. Tipos Avançados
+   1. Type Guards
+   2. keyof e typeof
+   3. Chaveamento de tipos
+   4. this como tipo
+   5. Overload de métodos e funções
+   6. Encadeamento opcional
+   7. Operador de coalescência nula
