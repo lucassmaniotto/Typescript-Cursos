@@ -62,3 +62,12 @@
    5. Overload de métodos e funções
    6. Encadeamento opcional
    7. Operador de coalescência nula
+5. Generic Types
+   1. Generics
+   2. Array e Promises
+   3. Interfaces e Type Alias genéricos
+   4. Restrições (constraints)
+   5. Generics em classes
+   6. Generics com intersection
+   7. Predicados de tipos
+   8. Utility Types
