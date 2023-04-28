@@ -71,3 +71,10 @@
    6. Generics com intersection
    7. Predicados de tipos
    8. Utility Types
+6. Decorators
+   1. Decorador de classes
+   2. Decorator Factories
+   3. Composição de decorators
+   4. Method Decorators
+   5. Parameter Decorators
+   6. Property Decorators
