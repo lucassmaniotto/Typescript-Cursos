@@ -78,3 +78,8 @@
    4. Method Decorators
    5. Parameter Decorators
    6. Property Decorators
+7. Namespaces e Modules
+   1. Namespace
+   2. Reference
+   3. Importação de módulos javascript para typescript
+   4. Utilização e extensão de bibliotecas de terceiros
