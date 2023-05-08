@@ -83,3 +83,16 @@
    2. Reference
    3. Importação de módulos javascript para typescript
    4. Utilização e extensão de bibliotecas de terceiros
+8. Princípios do SOLID
+   1. O que é SOLID?
+   2. SRP - Single Responsability Principle
+   3. OCP - Open Closed Principle
+   4. LSP - Liskov Substitution Principle
+   5. ISP - Interface Segregation Principle
+   6. DIP - Dependency Inversion Principle
+   7. DRY - Don't Repeat Yourself
+   8. YAGNI - You Aren't Gonna Need It
+   9. KISS - Keep It Simple, Stupid
+   10. SOC - Separation of Concerns
+   11. MVP - Minimum Viable Product
+   12. Vantagens e desvantagens
