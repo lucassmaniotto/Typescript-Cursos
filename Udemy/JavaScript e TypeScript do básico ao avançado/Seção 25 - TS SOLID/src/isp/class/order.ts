@@ -1,16 +1,16 @@
 import { OrderStatus } from './interfaces/order-status';
-import { LSPShoppingCart } from './shopping-cart';
-import { OCPMessaging } from '../services/messaging';
-import { OCPPersistence } from '../services/persistence';
+import { ShoppingCart } from './shopping-cart';
+import { Messaging } from '../services/messaging';
+import { Persistence } from '../services/persistence';
 import { CustomerOrder } from './interfaces/customer-protocol';
 
-export class LSPOrder {
+export class Order {
   private _orderStatus: OrderStatus = 'open';
 
   constructor(
-    private readonly shoppingCart: LSPShoppingCart,
-    private readonly messaging: OCPMessaging,
-    private readonly persistence: OCPPersistence,
+    private readonly shoppingCart: ShoppingCart,
+    private readonly messaging: Messaging,
+    private readonly persistence: Persistence,
     private readonly customer: CustomerOrder
   ) { }
 

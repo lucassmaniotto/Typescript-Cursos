@@ -1,7 +1,7 @@
 import { Discount } from './discount';
 import { CardItem } from './interfaces/card-item';
 
-export class LSPShoppingCart {
+export class ShoppingCart {
   private readonly _items: CardItem[] = [];
 
   constructor(private readonly discount: Discount) {}
