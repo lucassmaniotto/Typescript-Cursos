@@ -1,3 +1,8 @@
+/*
+  SRP - Single Responsibility Principle
+  Uma classe deve ter um, e somente um, motivo para mudar.
+*/
+
 import { SRPShoppingCart } from './entities/class/shopping-cart';
 import { SRPOrder } from './entities/class/order';
 import { SRPMessaging } from './services/messaging';
