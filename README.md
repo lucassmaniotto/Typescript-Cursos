@@ -96,3 +96,5 @@
    10. SOC - Separation of Concerns
    11. MVP - Minimum Viable Product
    12. Vantagens e desvantagens
+9.  Testes com Jest
+    1.  Asserções
