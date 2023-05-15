@@ -1,23 +1,22 @@
 /*
-  LSP - Liskov Substitution Principle (Princípio da substituição de Liskov)
-  Se Φ(x) é uma propriedade demonstrável dos objetos x de tipo T. Então Φ(y) deve ser verdadeiro para objetos y de tipo S onde S é um subtipo de T.
-
-  Subtipos precisam ser substituíveis por seus tipos de base.
-  Se meu programa espera um Animal, algo do tipo Cachorro (que herda de Animal) deve servir como qualquer outro Animal.
+  ISP - Interface Segregation Principle
+  Os clientes não devem ser forçados a depender de interfaces que não utilizam.
 */
 
 import { LSPShoppingCart } from './class/shopping-cart';
 import { LSPOrder } from './class/order';
-import { LSPMessaging } from './services/messaging';
-import { LSPPersistence } from './services/persistence';
+import { OCPMessaging } from './services/messaging';
+import { OCPPersistence } from './services/persistence';
 import { LSPProduct } from './class/product';
 import { TenPercentDiscount } from './class/discount';
+import { EnterpriseCustomer } from './class/customer';
 
 const discount = new TenPercentDiscount();
+const enterpriseCustomer = new EnterpriseCustomer ('Empresa 1', '2222222222222');
 const shoppingCart = new LSPShoppingCart(discount);
-const messaging = new LSPMessaging();
-const persistence = new LSPPersistence();
-const order = new LSPOrder(shoppingCart, messaging, persistence);
+const messaging = new OCPMessaging();
+const persistence = new OCPPersistence();
+const order = new LSPOrder(shoppingCart, messaging, persistence, enterpriseCustomer);
 const index = 1;
 
 console.log(`Adicionando itens ao carrinho...`);
