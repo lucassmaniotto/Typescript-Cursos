@@ -1,16 +1,16 @@
 import { OrderStatus } from './interfaces/order-status';
-import { ShoppingCart } from './shopping-cart';
-import { Messaging } from '../services/messaging';
-import { Persistence } from '../services/persistence';
 import { CustomerOrder } from './interfaces/customer-protocol';
+import { ShoppingCartProtocol } from './interfaces/shopping-cart-protocol';
+import { MessagingProtocol } from './interfaces/messaging-protocol';
+import { PersistenceProtocol } from './interfaces/persistence-protocol';
 
 export class Order {
   private _orderStatus: OrderStatus = 'open';
 
   constructor(
-    private readonly shoppingCart: ShoppingCart,
-    private readonly messaging: Messaging,
-    private readonly persistence: Persistence,
+    private readonly shoppingCart: ShoppingCartProtocol,
+    private readonly messaging: MessagingProtocol,
+    private readonly persistence: PersistenceProtocol,
     private readonly customer: CustomerOrder
   ) { }
 
