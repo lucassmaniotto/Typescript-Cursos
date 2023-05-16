@@ -1,6 +1,6 @@
-import { CardItem } from "./interfaces/card-item";
+import { CartItem } from "./interfaces/cart-item";
 
-export class Product implements CardItem {
+export class Product implements CartItem {
   constructor(
     public name: string,
     public price: number

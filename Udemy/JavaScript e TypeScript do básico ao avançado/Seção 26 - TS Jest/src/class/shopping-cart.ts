@@ -1,13 +1,13 @@
 import { Discount } from './discount';
-import { CardItem } from './interfaces/card-item';
+import { CartItem } from './interfaces/cart-item';
 import { ShoppingCartProtocol } from './interfaces/shopping-cart-protocol';
 
 export class ShoppingCart implements ShoppingCartProtocol {
-  private readonly _items: CardItem[] = [];
+  private readonly _items: CartItem[] = [];
 
   constructor(private readonly discount: Discount) {}
 
-  get items(): Readonly<CardItem[]> {
+  get items(): Readonly<CartItem[]> {
     return this._items;
   }
 
@@ -27,7 +27,7 @@ export class ShoppingCart implements ShoppingCartProtocol {
     console.log('-----------------------------------------\n');
   }
 
-  addItem(item: CardItem): void {
+  addItem(item: CartItem): void {
     this._items.push(item);
   }
 

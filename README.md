@@ -99,3 +99,5 @@
 9.  Testes com Jest
     1.  Asserções
     2.  spyOn
+    3.  Factory Functions
+    4.  Mocks
