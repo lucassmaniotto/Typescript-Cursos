@@ -7,7 +7,7 @@ const createSut = (name: string, price: number): Product => {
 describe('Messaging', () => {
   afterEach(() => jest.clearAllMocks());
 
-  it('should return undefined' , () => {
+  it('should have properties name and price' , () => {
     const sut = createSut('Ancient Sword of the Elder Gods', 1000000);
     expect(sut).toHaveProperty('name', 'Ancient Sword of the Elder Gods');
     expect(sut).toHaveProperty('price', 1000000);
