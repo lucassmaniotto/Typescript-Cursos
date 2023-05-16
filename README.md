@@ -98,3 +98,4 @@
    12. Vantagens e desvantagens
 9.  Testes com Jest
     1.  Asserções
+    2.  spyOn
