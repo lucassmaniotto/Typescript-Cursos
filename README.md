@@ -102,3 +102,4 @@
     3.  Factory Functions
     4.  Mocks
     5.  Testes de integração
+    6.  Test coverage
