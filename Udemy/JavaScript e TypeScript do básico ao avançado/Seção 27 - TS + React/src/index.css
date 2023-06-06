@@ -1,0 +1,44 @@
+:root {
+  --first-color: #530C0C;
+  --second-color: #8F0E0E;
+  --third-color: #FF6347;
+  --fourth-color: #F7F6DE;
+  --leaves-color: #A8B848;
+  
+  --title-font-family: 'Poppins', sans-serif;
+  --subtitle-font-family: 'Rasa', serif;
+  --text-font-family: 'Nunito Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  transition: background 1s ease-in-out;
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--text-font-family);
+  background-color: var(--first-color);
+  color: var(--fourth-color);
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  min-height: 85vh;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,198 @@
+.pomodoro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background-image:
+    radial-gradient(
+      var(--second-color) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      var(--second-color) 50%,
+      transparent 50%
+    );
+  background-position: 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  position: relative;
+}
+
+.pomodoroTop {
+  background: var(--leaves-color);
+  height: 30px;
+  width: 48px;
+  border-radius: 48px 0 48px 0;
+  position: absolute;
+  transform: rotateZ(135deg);
+  top: 95px;
+  z-index: 1;
+  left: 200px;
+}
+
+.pomodoroTop::before {
+  content: "";
+  background: var(--leaves-color);
+  height: 48px;
+  width: 48px;
+  border-radius: 48px 0 48px 0;
+  position: absolute;
+  z-index: 1;
+  transform: rotateZ(90deg);
+  top: 25px;
+}
+
+.pomodoroTop::after {
+  content: "";
+  background: var(--leaves-color);
+  height: 48px;
+  width: 48px;
+  border-radius: 48px 0 48px 0;
+  position: absolute;
+  z-index: 1;
+  transform: rotateZ(90deg);
+  top: -10px;
+  right: 39px;
+}
+
+.pomodoroFill {
+  background: var(--second-color);
+  width: 131px;
+  height: 73px;
+  border-radius: 16px;
+  position: absolute;
+  top: 311px;
+  z-index: 1;
+  left: 159px;
+}
+
+.pomodoro h2 {
+  font-family: var(--title-font-family);
+  font-size: 22px;
+  color: var(--fourth-color);
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.pomodoro h3 {
+  font-family: var(--subtitle-font-family);
+  font-size: 30px;
+  color: var(--fourth-color);
+}
+
+.pomodoro .timer {
+  font-size: 4rem;
+  color: var(--fourth-color);
+}
+
+.pomodoro .controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0 1rem;
+}
+
+.working {
+  background-color: var(--fourth-color);
+  color: var(--first-color);
+}
+
+.working .pomodoro {
+  background-image:
+    radial-gradient(
+      var(--third-color) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      var(--third-color) 50%,
+      transparent 50%
+    );
+  background-position: 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.working .pomodoroFill {
+  background-image:
+    radial-gradient(
+      var(--third-color) 100%,
+      transparent 100%
+    ),
+    radial-gradient(
+      var(--third-color) 100%,
+      transparent 100%
+    );
+}
+
+.working .pomodoro h2, .working .pomodoro h3, .working .pomodoro .timer {
+  color: var(--first-color);
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  background-color: var(--second-color);
+  padding: 1rem;
+  border-radius: 15px;
+  color: var(--fourth-color);
+  font-family: var(--text-font-family);
+  font-weight: bold;
+}
+
+.working .details {
+  background-color: var(--third-color);
+  color: var(--first-color);
+}
+
+@media screen and (max-width: 450px) {
+  .pomodoro {
+    width: 320px;
+    height: 320px;
+  }
+  .pomodoro h2 {
+    font-size: 18px;
+  }
+  .pomodoro h3 {
+    font-size: 24px;
+  }
+  .pomodoro .timer {
+    font-size: 3rem;
+  }
+  .pomodoro .controls {
+    padding: 0 0.5rem;
+  }
+  
+  .details {
+    font-size: 0.9rem;
+  }
+
+  .pomodoroTop {
+    top: 65px;
+    left: 135px;
+  }
+
+  .pomodoroTop::before {
+    top: 15px;
+  }
+
+  .pomodoroTop::after {
+    top: -10px;
+    right: 25px;
+  }
+
+  .pomodoroFill {
+    background-color: var(--second-color);
+    width: 100px;
+    height: 29px;
+    top: 244px;
+    left: 109px;
+  }
+}

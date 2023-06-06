@@ -103,3 +103,11 @@
     4.  Mocks
     5.  Testes de integração
     6.  Test coverage
+10. Typescript e React
+    1.  Introdução
+    2.  Criando projeto React com Typescript
+    3.  Componentes com Typescript
+    4.  Props com Typescript
+    5.  Estado com Typescript
+    6.  Eventos com Typescript
+    7.  Hooks com Typescript
