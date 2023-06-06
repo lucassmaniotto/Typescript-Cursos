@@ -23,5 +23,9 @@
     "typescript",
     "typescriptreact"
   ],
-  "eslint.lintTask.enable": true
+  "eslint.lintTask.enable": true,
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "typescript": "npx ts-node --files --transpile-only"
+  },
 }
