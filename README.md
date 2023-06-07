@@ -111,3 +111,29 @@
     5.  Estado com Typescript
     6.  Eventos com Typescript
     7.  Hooks com Typescript
+11. Design Patterns
+    1.  Creational Patterns
+        1.  Singleton
+        2.  Builder
+        3.  Prototype
+        4.  Factory
+        5.  Abstract Factory
+    2.  Structural Patterns
+        1.  Composite
+        2.  Adapter
+        3.  Bridge
+        4.  Decorator
+        5.  Facade
+        6.  Proxy
+        7.  Flyweight
+    3.  Behavioral Patterns
+        1.  Strategy
+        2.  Command
+        3.  Memento
+        4.  State
+        5.  Mediator
+        6.  Chain of Responsibility
+        7.  Template Method
+        8.  Observer
+        9.  Iterator
+        10. Visitor
