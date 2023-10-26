@@ -1,6 +1,6 @@
 # Alura
 ## TypeScript
-### Formação disponível em: [Alura](https://cursos.alura.com.br/formacao-typescript)
+### Melhore sua experiência de desenvolvimento com TypeScript - Formação disponível em: [Alura](https://cursos.alura.com.br/formacao-typescript)
 1. Um mergulho no TypeScript
    1. [TypeScript parte 1: evoluindo seu JavaScript](https://cursos.alura.com.br/course/typescript-evoluindo-javascript)
       1. Introdução aos módulos ECMAScript e limitações do JavaScript;
@@ -11,6 +11,11 @@
    2. [TypeScript parte 2: avançando na linguagem](https://cursos.alura.com.br/course/typescript-avancando-linguagem)
       1. Template declarativo e dinâmico e formatação com Intl;
       2. Herança e Classes Abstratas;
+      3. Métodos Privados e Enumerations
+      4. Métodos Estáticos e Parâmetros Opcionais;
+      5. TSC e Strict Null Checks;
+   3. [Typescript parte 3: mais técnicas e boas práticas](https://cursos.alura.com.br/course/typescript-tecnicas-boas-praticas)
+
 
 # Udemy
 ## JavaScript e TypeScript do básico ao avançado
