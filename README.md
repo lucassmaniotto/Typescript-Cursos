@@ -16,7 +16,7 @@
       5. TSC e Strict Null Checks;
    3. [Typescript parte 3: mais técnicas e boas práticas](https://cursos.alura.com.br/course/typescript-tecnicas-boas-praticas)
       1. Decorators
-      2. 
+      2. Decorators de métodos
 
 
 # Udemy
