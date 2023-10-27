@@ -12,3 +12,4 @@ export function domInject(seletor) {
         });
     };
 }
+//# sourceMappingURL=dom-injector.js.map

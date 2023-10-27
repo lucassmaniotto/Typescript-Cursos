@@ -5,6 +5,7 @@ import { DiasDaSemana } from "../enums/dias-da-semana.js";
 import { Negociacao } from "../models/negociacao.js";
 import { Negociacoes } from "../models/negociacoes.js";
 import { NegociacoesSevice } from "../services/negociacao-service.js";
+import { imprimir } from "../utils/imprimir.js";
 import { MensagemView } from "../views/mensagem-view.js";
 import { NegociacoesView } from "../views/negociacoes-view.js";
 
@@ -12,10 +13,10 @@ export class NegociacaoController {
   @domInject("#data")
   private inputData: HTMLInputElement;
 
-  @domInject("#data")
+  @domInject("#quantidade")
   private inputQuantidade: HTMLInputElement;
 
-  @domInject("#data")
+  @domInject("#valor")
   private inputValor: HTMLInputElement;
 
   private negociacoes = new Negociacoes();
@@ -30,9 +31,6 @@ export class NegociacaoController {
   @inspect
   @logarTempoDeExecucao()
   public adiciona(): void {
-    /*
-            Zé, você já viu isso?
-        */
     const negociacao = Negociacao.criaDe(
       this.inputData.value,
       this.inputQuantidade.value,
@@ -45,14 +43,23 @@ export class NegociacaoController {
     }
 
     this.negociacoes.adiciona(negociacao);
+    imprimir(negociacao, this.negociacoes);
     this.limparFormulario();
     this.atualizaView();
-    const t2 = performance.now();
   }
 
   public importaDados(): void {
     this.negociacoesService
       .obterNegociacoesDoDia()
+      .then((negociacoesDoDia: Negociacao[]) => {
+        return negociacoesDoDia.filter((negociacaoDoDia: Negociacao) => {
+          return !this.negociacoes
+            .lista()
+            .some((negociacao: Negociacao) =>
+              negociacao.ehIgual(negociacaoDoDia)
+            );
+        });
+      })
       .then((negociacoes: Negociacao[]) => {
         for (let negociacao of negociacoes) {
           this.negociacoes.adiciona(negociacao);

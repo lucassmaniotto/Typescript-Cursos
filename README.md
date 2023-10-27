@@ -1,6 +1,6 @@
 # Alura
-## TypeScript
-### Melhore sua experiência de desenvolvimento com TypeScript - Formação disponível em: [Alura](https://cursos.alura.com.br/formacao-typescript)
+## Melhore sua experiência de desenvolvimento com TypeScript 
+### Formação disponível em: [Alura](https://cursos.alura.com.br/formacao-typescript)
 1. Um mergulho no TypeScript
    1. [TypeScript parte 1: evoluindo seu JavaScript](https://cursos.alura.com.br/course/typescript-evoluindo-javascript)
       1. Introdução aos módulos ECMAScript e limitações do JavaScript;
@@ -19,6 +19,7 @@
       2. Decorator de métodos
       3. Decorator de propriedade
       4. API externa e Interface
+      5. Interface com Generics e Interface com Herança
 
 
 # Udemy
